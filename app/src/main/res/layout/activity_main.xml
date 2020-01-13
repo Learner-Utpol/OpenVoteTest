@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EFEDF2"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolBarColor">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:text="Create Vote"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add a Topic"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="9dp"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/toolBarColor"
+            />
+
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="134dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/curve_background"
+            android:ellipsize="start"
+            android:padding="10dp"
+            android:hint="Type Topic"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:textSize="16sp" />
+
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:text="Enter your topic ending date/time"
+            android:textColor="@color/text_color" />-->
+
+        <!--<LinearLayout
+            android:weightSum="6"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:inputType="date"
+                android:textAlignment="center"
+                android:hint="d"
+                android:layout_weight=".5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+             <EditText
+                android:inputType="date"
+                android:textAlignment="center"
+                android:hint="d"
+                android:layout_weight=".5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:inputType="date"
+                android:textAlignment="center"
+                android:hint="M"
+                android:layout_weight=".5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:inputType="date"
+                android:textAlignment="center"
+                android:hint="M"
+                android:layout_weight=".5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:inputType="date"
+                android:textAlignment="center"
+                android:hint="YYYY"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+
+
+
+        </LinearLayout>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:weightSum="2">
+
+            <!--<LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:tint="@color/icon_color"
+                android:src="@drawable/date_icon"
+                android:layout_marginLeft="15dp"
+                android:layout_width="32dp"
+                android:layout_height="32dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color"
+                android:text="Pick a date"/>
+
+        </LinearLayout>-->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="7.8dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:text="Date to end"
+                android:textColor="@color/toolBarColor" />
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="7.8dp"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:text="Time to end"
+                android:textColor="@color/toolBarColor" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!--<LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:tint="@color/icon_color"
+                    android:src="@drawable/time_icon"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"
+                    android:text="Pick a time"/>
+
+            </LinearLayout>-->
+
+            <TextView
+                android:drawableRight="@drawable/date_icon"
+                android:drawableTint="#A09EA1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:text="9 Jan, 2020"
+                android:background="@drawable/curve_background"
+                android:textColor="@color/text_color" />
+
+
+            <TextView
+                android:drawableRight="@drawable/time_icon"
+                android:drawableTint="#A09EA1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:text="12 : 00 PM"
+                android:background="@drawable/curve_background"
+                android:textColor="@color/text_color" />
+
+
+        </LinearLayout>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notify me when users give any feedback"
+            android:textColor="#A5A3A6"
+            android:buttonTint="#A5A3A6"/>
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="9dp"
+            android:background="@drawable/button_background"
+            android:text="Create and Start"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
