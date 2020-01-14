@@ -24,7 +24,7 @@
 
     <androidx.cardview.widget.CardView
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="291dp"
+        android:layout_marginBottom="320dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         app:cardCornerRadius="4dp"
@@ -127,7 +127,7 @@
                 android:padding="10dp"
                 android:gravity="top"
                 android:hint="Add Comment"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginBottom="10dp"
