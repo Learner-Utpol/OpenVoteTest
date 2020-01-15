@@ -201,7 +201,7 @@
 
             <TextView
                 android:drawableRight="@drawable/date_icon"
-                android:drawableTint="#A09EA1"
+                android:drawableTint="@color/toolBarColor"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
@@ -210,7 +210,7 @@
                 android:textAlignment="center"
                 android:textSize="16sp"
                 android:text="9 Jan, 2020"
-                android:background="@drawable/curve_background"
+                android:background="@drawable/visible_time_date"
                 android:textColor="@color/text_color" />
 
 
