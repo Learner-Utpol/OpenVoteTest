@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         int hour = mTime.get(Calendar.HOUR_OF_DAY);
         int minute = mTime.get(Calendar.MINUTE);
 
-        TimePickerDialog timePickerDialog = new TimePickerDialog(this,onTimeSetListener,hour,minute,true);
+        TimePickerDialog timePickerDialog = new TimePickerDialog(this,onTimeSetListener,hour,minute,false);
         timePickerDialog.show();
     }
 
