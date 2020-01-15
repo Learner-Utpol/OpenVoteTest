@@ -200,6 +200,7 @@
             </LinearLayout>-->
 
             <TextView
+                android:id="@+id/dateTv"
                 android:drawableRight="@drawable/date_icon"
                 android:drawableTint="@color/toolBarColor"
                 android:layout_width="0dp"
@@ -215,18 +216,19 @@
 
 
             <TextView
-                android:drawableRight="@drawable/time_icon"
-                android:drawableTint="#A09EA1"
+                android:id="@+id/timeTv"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:padding="8dp"
                 android:layout_weight="1"
-                android:textAlignment="center"
-                android:textSize="16sp"
-                android:text="12 : 00 PM"
                 android:background="@drawable/curve_background"
-                android:textColor="@color/text_color" />
+                android:drawableRight="@drawable/time_icon"
+                android:drawableTint="#A09EA1"
+                android:padding="8dp"
+                android:text="12 : 00 PM"
+                android:textAlignment="center"
+                android:textColor="@color/text_color"
+                android:textSize="16sp" />
 
 
         </LinearLayout>
