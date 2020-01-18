@@ -10,11 +10,13 @@ import android.widget.DatePicker;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
+import java.text.DateFormat;
 import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
 
     private TextView datePic,timePic;
+    String amPm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 dateIn();
+
             }
         });
 
@@ -41,7 +44,13 @@ public class MainActivity extends AppCompatActivity {
     private void timeCu() {
         TimePickerDialog.OnTimeSetListener onTimeSetListener = new TimePickerDialog.OnTimeSetListener() {
             @Override
-            public void onTimeSet(TimePicker timePicker, int i, int i1) {
+            public void onTimeSet(TimePicker timePicker, int hour, int minute) {
+                if (hour >= 12){
+                    amPm = "PM";
+                }else {
+                    amPm ="AM";
+                }
+                timePic.setText(hour +":"+minute+" "+amPm);
 
             }
         };
@@ -52,6 +61,8 @@ public class MainActivity extends AppCompatActivity {
 
         TimePickerDialog timePickerDialog = new TimePickerDialog(this,onTimeSetListener,hour,minute,false);
         timePickerDialog.show();
+
+
     }
 
 
@@ -61,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDateSet(DatePicker datePicker, int year, int month, int day) {
 
+
             }
         };
 
@@ -69,8 +81,15 @@ public class MainActivity extends AppCompatActivity {
         int month = calendar.get(Calendar.MONTH);
         int day = calendar.get(Calendar.DAY_OF_MONTH);
 
+
         DatePickerDialog datePickerDialog = new DatePickerDialog(this,onDateSetListener,year,month,day);
+
+        String currentDateString = DateFormat.getDateInstance().format(calendar.getTime());
+
+        datePic.setText(currentDateString);
+
         datePickerDialog.show();
+
     }
 
     private void init() {

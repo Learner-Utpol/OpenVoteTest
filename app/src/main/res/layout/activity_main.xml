@@ -207,7 +207,7 @@
             <TextView
                 android:id="@+id/dateTv"
                 android:drawableRight="@drawable/date_icon"
-                android:drawableTint="@color/toolBarColor"
+                android:drawableTint="#A09EA1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
@@ -216,7 +216,7 @@
                 android:textAlignment="center"
                 android:textSize="16sp"
                 android:text="9 Jan, 2020"
-                android:background="@drawable/visible_time_date"
+                android:background="@drawable/custom_text_time_date_pic"
                 android:textColor="@color/text_color" />
 
 
@@ -226,7 +226,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:background="@drawable/curve_background"
+                android:background="@drawable/custom_text_time_date_pic"
                 android:drawableRight="@drawable/time_icon"
                 android:drawableTint="#A09EA1"
                 android:padding="8dp"
